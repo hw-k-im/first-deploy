@@ -6,7 +6,7 @@ export default function Home() {
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:filter none"
-          src="/my image.jpeg"
+          src="/my-image.jpeg"
           alt="myImage"
           width={300}
           height={250}
