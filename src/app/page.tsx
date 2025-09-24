@@ -6,7 +6,7 @@ export default function Home() {
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:filter none"
-          src="/my image.jpeg"
+          src="/my-image.jpeg"
           alt="myImage"
           width={300}
           height={250}
@@ -21,7 +21,7 @@ export default function Home() {
             .
           </li>
           <li className="tracking-[-.01em]">
-            캠핑을 좋아하고 옆에 강아지 이름은 "소피" 입니다.
+            {"캠핑을 좋아하고 옆에 강아지 이름은 \"소피\" 입니다."}
           </li>
           <li className="tracking-[-.01em]">
             test...
