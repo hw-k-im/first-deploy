@@ -1,4 +1,14 @@
 {
-  "name":"hw-k-im"
-  
+  "name": "hw-k-im",
+  "title": "Aspiring Software Developer",
+  "email": "hw.k.im@example.com",
+  "github": "https://github.com/hw-k-im",
+  "linkedin": "https://www.linkedin.com/in/your-id",
+  "profile_image": "/images/my-image.jpeg",
+  "skills": {
+    "frontend": ["React", "Next.js", "TypeScript", "TailwindCSS"],
+    "backend": ["Java", "Spring Boot", "JPA/MyBatis", "MariaDB", "Redis"],
+    "devops": ["Docker", "GitHub Actions", "Vercel"],
+    "tools": ["Git", "Figma", "Postman", "Jira"]
+  }
 }
