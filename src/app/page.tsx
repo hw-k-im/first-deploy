@@ -13,16 +13,16 @@ async function fetchJson<T>(url: string): Promise<T> {
 
 export default async function Home() {
   const general = await fetchJson<any>(
-    "https://raw.githubusercontent.com/hw-k-im/first-deploy/main/service/resume_general.json"
+    "https://raw.githubusercontent.com/hw-k-im/first-deploy/refs/heads/main/public/service/resume_general.json"
   );
   const portfolio = await fetchJson<any[]>(
-    "https://raw.githubusercontent.com/hw-k-im/first-deploy/main/service/resume_portfolio.json"
+    "https://raw.githubusercontent.com/hw-k-im/first-deploy/refs/heads/main/public/service/resume_portfolio.json"
   );
   const experience = await fetchJson<any[]>(
-    "https://raw.githubusercontent.com/hw-k-im/first-deploy/main/service/resume_experience.json"
+    "https://raw.githubusercontent.com/hw-k-im/first-deploy/refs/heads/main/public/service/resume_experience.json"
   );
   const education = await fetchJson<any[]>(
-    "https://raw.githubusercontent.com/hw-k-im/first-deploy/main/service/resume_education.json"
+    "https://raw.githubusercontent.com/hw-k-im/first-deploy/refs/heads/main/public/service/resume_education.json"
   );
 
   return (
