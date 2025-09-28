@@ -9,15 +9,6 @@
   },
 
   {
-    "project_name": "Blog CRUD",
-    "project_description": "Spring Boot + React 블로그 프로젝트",
-    "tech_stack": ["Spring Boot", "MyBatis", "React"],
-    "github": "https://github.com/hw-k-im/blog-project",
-    "demo": "",
-    "thumbnail": "/images/projects/blog-thumb.png"
-  },
-
-  {
     "project_name": "Next.js Portfolio",
     "project_description": "Next.js + Tailwind로 만든 개인 포트폴리오",
     "tech_stack": ["Next.js", "TailwindCSS", "Vercel"],

@@ -1,29 +1,37 @@
-import EducationSection from "@/components/section/EducationSection";
-import ExperienceSection from "@/components/section/ExperienceSection";
-import InfoSection from "@/components/section/InfoSection";
-import ProjectsSection from "@/components/section/ProjectSection";
-import SkillsSection from "@/components/section/SkillSection";
-import { getEducation, getExperience, getGeneral, getPortfolio } from "@/lib/fetchers";
+import InfoSection from "@/components/sections/InfoSection";
+import SkillSection from "@/components/sections/SkillSection";
+import ExperienceSection from "@/components/sections/ExperienceSection";
+import ProjectSection from "@/components/sections/ProjectSection";
+import EducationSection from "@/components/sections/EducationSection";
 
+// 공용 함수
+async function fetchJson<T>(url: string): Promise<T> {
+  const res = await fetch(url, { cache: "no-store" });
+  if (!res.ok) throw new Error(`Failed to fetch ${url}`);
+  return res.json();
+}
 
 export default async function Home() {
-  const [general, portfolio, experience, education] = await Promise.all([
-    getGeneral(),
-    getPortfolio(),
-    getExperience(),
-    getEducation(),
-  ]);
+  const general = await fetchJson<any>(
+    "https://raw.githubusercontent.com/hw-k-im/first-deploy/main/service/resume_general.json"
+  );
+  const portfolio = await fetchJson<any[]>(
+    "https://raw.githubusercontent.com/hw-k-im/first-deploy/main/service/resume_portfolio.json"
+  );
+  const experience = await fetchJson<any[]>(
+    "https://raw.githubusercontent.com/hw-k-im/first-deploy/main/service/resume_experience.json"
+  );
+  const education = await fetchJson<any[]>(
+    "https://raw.githubusercontent.com/hw-k-im/first-deploy/main/service/resume_education.json"
+  );
 
   return (
-    <main className="max-w-4xl mx-auto p-6">
+    <main className="max-w-3xl mx-auto px-6 py-12">
       <InfoSection general={general} />
-      <SkillsSection skills={general.skills} />
+      <SkillSection skills={general.skills} />
       <ExperienceSection experiences={experience} />
-      <ProjectsSection projects={portfolio} />
+      <ProjectSection projects={portfolio} />
       <EducationSection education={education} />
-      <footer className="mt-16 text-center text-sm text-gray-500">
-        &copy; {new Date().getFullYear()} {general.name}. All rights reserved.
-      </footer>
     </main>
   );
 }

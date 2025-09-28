@@ -1,3 +1,4 @@
+[
   {
     "company": "LG CNS CAMP (Bootcamp)",
     "role": "Full-stack Trainee",
@@ -9,3 +10,4 @@
     ],
     "tech_stack": ["Java", "Spring Boot", "JPA", "MariaDB", "Docker", "JWT"]
   }
+]
