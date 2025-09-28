@@ -1,4 +1,5 @@
 "use client";
+import type { SkillsGroup } from "@/lib/types";
 
 function Pills({ items }: { items: string[] }) {
   return (
@@ -15,7 +16,7 @@ function Pills({ items }: { items: string[] }) {
   );
 }
 
-export default function SkillSection({ skills }: { skills: any }) {
+export default function SkillSection({ skills }: { skills: SkillsGroup }) {
   return (
     <section id="skills" className="my-16">
       <h2 className="text-2xl font-semibold mb-6">Skills</h2>
@@ -32,10 +33,12 @@ export default function SkillSection({ skills }: { skills: any }) {
           <h3 className="font-semibold mb-2">DevOps</h3>
           <Pills items={skills.devops} />
         </div>
-        <div>
-          <h3 className="font-semibold mb-2">Tools</h3>
-          <Pills items={skills.tools} />
-        </div>
+        {skills.tools && (
+          <div>
+            <h3 className="font-semibold mb-2">Tools</h3>
+            <Pills items={skills.tools} />
+          </div>
+        )}
       </div>
     </section>
   );

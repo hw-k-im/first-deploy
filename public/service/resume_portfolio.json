@@ -5,7 +5,7 @@
     "tech_stack": ["Java", "Spring Boot", "MariaDB", "Docker", "JWT"],
     "github": "https://github.com/LG-CNS-AM03-MINI-PROJECT-1st-TEAM2/WeFit",
     "demo": "",
-    "thumbnail": "/images/projects/WeFit.png"
+    "thumbnail": "/images/WeFit.png"
   },
 
   {
@@ -14,6 +14,6 @@
     "tech_stack": ["Next.js", "TailwindCSS", "Vercel"],
     "github": "https://github.com/hw-k-im/first-deploy",
     "demo": "https://www.hw-k-im.store",
-    "thumbnail": "/images/projects/NextjsPortfolio.png"
+    "thumbnail": "/images/NextjsPortfolio.png"
   }
 ]

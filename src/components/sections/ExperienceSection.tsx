@@ -1,10 +1,7 @@
 "use client";
+import type { Experience } from "@/lib/types";
 
-export default function ExperienceSection({
-  experiences,
-}: {
-  experiences: any[];
-}) {
+export default function ExperienceSection({ experiences }: { experiences: Experience[] }) {
   return (
     <section id="experience" className="my-16">
       <h2 className="text-2xl font-semibold mb-4">Experience</h2>
@@ -15,7 +12,13 @@ export default function ExperienceSection({
               {exp.role} @ {exp.company}
             </h3>
             <p className="text-sm text-gray-500">{exp.period}</p>
-            <p className="mt-2">{exp.details}</p>
+            {exp.achievements && (
+              <ul className="list-disc ml-6 mt-2">
+                {exp.achievements.map((ach, j) => (
+                  <li key={j}>{ach}</li>
+                ))}
+              </ul>
+            )}
           </div>
         ))}
       </div>

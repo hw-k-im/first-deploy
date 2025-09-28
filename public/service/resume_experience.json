@@ -1,11 +1,11 @@
 [
   {
     "company": "LG CNS CAMP (Bootcamp)",
-    "role": "Full-stack Trainee",
-    "period": "2025.03 - 2025.09",
+    "role": "Full-stack Developer",
+    "period": "2025.07 - 2026.01",
     "achievements": [
       "WeFit 프로젝트: 회원가입/로그인·토큰 인증 모듈 담당",
-      "Spring Boot 3, JPA, Security, JWT 기반 REST API 설계",
+      "Spring Boot, JPA, Security, JWT 기반 REST API 설계",
       "MariaDB 스키마/시드 구성, Docker-Compose 로컬 환경 구축"
     ],
     "tech_stack": ["Java", "Spring Boot", "JPA", "MariaDB", "Docker", "JWT"]

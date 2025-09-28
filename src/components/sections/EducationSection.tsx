@@ -1,6 +1,7 @@
 "use client";
+import type { Education } from "@/lib/types";
 
-export default function EducationSection({ education }: { education: any[] }) {
+export default function EducationSection({ education }: { education: Education[] }) {
   return (
     <section id="education" className="my-16">
       <h2 className="text-2xl font-semibold mb-4">Education</h2>
@@ -11,7 +12,7 @@ export default function EducationSection({ education }: { education: any[] }) {
             <p className="text-sm text-gray-500">
               {edu.period} {edu.major && ` | ${edu.major}`}
             </p>
-            <p className="mt-1">{edu.details}</p>
+            {edu.details && <p className="mt-1">{edu.details}</p>}
           </div>
         ))}
       </div>
