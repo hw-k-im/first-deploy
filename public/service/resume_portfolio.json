@@ -1,11 +1,11 @@
 [
   {
     "project_name": "WeFit",
-    "project_description": "헬스장 커뮤니티 게이미피케이션 서비스",
+    "project_description": "헬스장 커뮤니티 게임화 서비스",
     "tech_stack": ["Java", "Spring Boot", "MariaDB", "Docker", "JWT"],
     "github": "https://github.com/LG-CNS-AM03-MINI-PROJECT-1st-TEAM2/WeFit",
     "demo": "",
-    "thumbnail": "/images/projects/wefit-thumb.png"
+    "thumbnail": "/images/WeFit.png"
   },
 
   {
@@ -13,7 +13,7 @@
     "project_description": "Next.js + Tailwind로 만든 개인 포트폴리오",
     "tech_stack": ["Next.js", "TailwindCSS", "Vercel"],
     "github": "https://github.com/hw-k-im/first-deploy",
-    "demo": "https://first-deploy.vercel.app",
-    "thumbnail": "/images/projects/portfolio-thumb.png"
+    "demo": "https://www.hw-k-im.store",
+    "thumbnail": "/images/NextjsPortfolio.png"
   }
 ]
