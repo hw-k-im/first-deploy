@@ -3,6 +3,8 @@ import SkillSection from "@/components/sections/SkillSection";
 import ExperienceSection from "@/components/sections/ExperienceSection";
 import ProjectSection from "@/components/sections/ProjectSection";
 import EducationSection from "@/components/sections/EducationSection";
+import { Education, Experience, General, Project } from "@/lib/types";
+
 
 // 공용 함수
 async function fetchJson<T>(url: string): Promise<T> {
@@ -12,16 +14,16 @@ async function fetchJson<T>(url: string): Promise<T> {
 }
 
 export default async function Home() {
-  const general = await fetchJson<any>(
+  const general = await fetchJson<General>(
     "https://raw.githubusercontent.com/hw-k-im/first-deploy/refs/heads/main/public/service/resume_general.json"
   );
-  const portfolio = await fetchJson<any[]>(
+  const portfolio = await fetchJson<Project[]>(
     "https://raw.githubusercontent.com/hw-k-im/first-deploy/refs/heads/main/public/service/resume_portfolio.json"
   );
-  const experience = await fetchJson<any[]>(
+  const experience = await fetchJson<Experience[]>(
     "https://raw.githubusercontent.com/hw-k-im/first-deploy/refs/heads/main/public/service/resume_experience.json"
   );
-  const education = await fetchJson<any[]>(
+  const education = await fetchJson<Education[]>(
     "https://raw.githubusercontent.com/hw-k-im/first-deploy/refs/heads/main/public/service/resume_education.json"
   );
 
